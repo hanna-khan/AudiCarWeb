@@ -1,0 +1,264 @@
+@import url('utility.css');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Courgette&family=Encode+Sans&family=Lato&family=PT+Sans&family=Roboto&family=Shadows+Into+Light&family=Ubuntu&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h6 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --primary: #cf233d;
+    --dark: #000;
+    --pure: #fff;
+}
+
+
+/* HEADER */
+
+.header {
+    background-image: url(/imgs/bg.png);
+    width: 100%;
+    height: 650px;
+    background-position: 106% 50%;
+    background-size: cover;
+    padding: 3rem 0;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header nav {
+    padding: 2rem;
+}
+
+.header nav img {
+    position: relative;
+    right: 55%;
+    top: -35px;
+    width: 300px;
+    height: 100%;
+}
+
+.header .left {
+    color: var(--pure);
+    margin-left: -150px;
+    margin-top: 5rem;
+}
+
+.header .left h1,
+.section-1 .right h1,
+.section-4 .left h1,
+.section-5 .card-wrapper .card h1,
+.section-6 h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header .left h6,
+.section-1 .right h6,
+.section-3 .card-wrapper .card h6,
+.section-4 .left h6,
+.section-5 .card-wrapper .card h6,
+.section-6 h6,
+.section-8 .card-wrapper .card h6 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+
+/* SECTION-1 */
+
+.section-1 {
+    height: 580px;
+    background-image: url(/imgs/img1.png);
+    background-size: cover;
+}
+
+.section-1 .right,
+.section-6 .right {
+    max-width: 720px;
+    padding: 45px;
+    color: var(--pure);
+    line-height: 2.5;
+}
+
+
+/* SECTION-2 */
+
+.section-2 video {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* SECTION-3 */
+
+.section-3 {
+    color: var(--pure);
+    background-color: var(--primary);
+    padding: 0 60px;
+    padding-top: 52px;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.section-3 .card-wrapper,
+.section-5 .card-wrapper,
+.section-8 .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.section-3 .card-wrapper .card,
+.section-5 .card-wrapper .card,
+.section-8 .card-wrapper .card {
+    line-height: 2;
+}
+
+.section-3 .card-wrapper .card h1 {
+    font-size: 2rem;
+}
+
+.section-3 .card-wrapper .card img {
+    width: 900px;
+}
+
+.section-3 .btn-primary {
+    background-color: var(--dark);
+    color: var(--pure);
+    padding: 10px 22px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    transition: .5s ease;
+    margin-bottom: 50px;
+}
+
+.section-3 .btn-primary:hover {
+    background-color: transparent;
+    border: 4px solid var(--dark);
+    color: var(--dark);
+}
+
+
+/* SECTION-4 */
+
+.section-4,
+.section-5,
+.section-8 {
+    background-color: var(--dark);
+    color: var(--pure);
+    height: 600px;
+    width: 100%;
+    margin: -5px;
+    padding: 0 60px;
+    padding-top: 70px;
+}
+
+.section-4 .right {
+    margin: auto 0;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.section-4 .left {
+    line-height: 2;
+}
+
+.section-4 .right img {
+    width: 650px;
+}
+
+.section-4 .btn-primary {
+    width: 170px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.8rem 3rem;
+    border-color: var(--pure);
+    border: 2px solid var(--pure);
+    color: var(--pure);
+    margin-top: 20px;
+    transition: .5s ease;
+}
+
+.section-4 .btn-primary:hover {
+    border-color: var(--pure);
+    background-color: var(--pure);
+    color: var(--dark);
+}
+
+
+/* SECTION-5 */
+
+.section-5 {
+    height: 700px;
+}
+
+.section-5 .card-wrapper .card img,
+.section-8 .card-wrapper .card img {
+    width: 500px;
+}
+
+.section-6 {
+    height: 500px;
+    background-image: url(/imgs/img7.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+/* SECTION-7 */
+
+.section-7 {
+    height: 550px;
+    background-image: url(/imgs/img8.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.section-8 {
+    height: 650px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--primary);
+    color: var(--pure);
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+}
